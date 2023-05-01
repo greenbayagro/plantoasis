@@ -3,7 +3,7 @@
         <div class="px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
                 <a href="#">
-                    <img src="logo.png" alt="" class="w-12"/>
+                    <img src="/logo.png" alt="" class="w-12"/>
                 </a>
 
                 <!-- Mobile menu button -->
