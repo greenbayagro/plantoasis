@@ -70,19 +70,22 @@
                     </div>
                 </div>
 
-                <div class=" max-w-lg w-full">
-                    <form>
-                        <div class="py-3 w-full">
-<input class="w-full block py-2"/>
-                        </div>
-                        <div class="py-3 w-full">
-<input class="w-full block py-2"/>
-                        </div>
-                        <div class="">
-                            <button class="border-none px-3 py-2 rounded bg-green-700 w-full block text-white">Submit</button>
-                        </div>
-                    </form>
-                </div>
+           <div class=" py-3">
+            <div class="font-poppins font-bold text-xl">Message us</div>
+            <div class="max-w-7xl w-full font-poppins">
+                <form>
+                    <div class="py-3">
+                        <input type="text" class="py-2 px-3 block md:w-120 w-72" placeholder="enter your email">
+                       
+                    </div>
+     <div class="py-3"><input type="text" class="py-2 px-3 block md:w-120 w-72 focus:ring-green-700" placeholder="enter your phone"></div>
+                          <div class="py-3">  <textarea class="py-2 px-3 block md:w-120 w-72 focus:ring-green-700"  placeholder="enter message"/></div>
+                          <div class="">
+                            <button class="bg-green-700 px-3 py-2 w-full border-none text-white font-poppins">submit</button>
+                          </div>
+                </form>
+            </div>
+           </div>
             </div>
         </div>
     </section>

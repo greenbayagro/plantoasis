@@ -18,7 +18,7 @@
                     </span>
                     <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">{{ item.title }}</h1>
                        <div class="">
-                            <p class="text-gray-500 dark:text-gray-300">
+                            <p class="text-gray-500 dark:text-gray-300 max-w-xs">
                            {{ item.description }}
                             </p>
                         </div>
@@ -38,7 +38,7 @@ let features = ref([
     {
         title: "feature #1",
         icon: 'i-ph:list',
-        description:"jfdksjflkajsdlfjsalkfjlsakjfdlksjdflsajdlfj"
+        description:"Plant Oasis is an agro product based affiliate marketing company that is dedicated to promoting sustainable and organic agricultural practices and products"
     }
 ])
 
