@@ -3,6 +3,7 @@
         <Nav/>
         <HomeHero/>
         <HomeFeatures/>
+        <HomeAbout/>
         <HomeProducts/>
         <HomeContact/>
         <Footer/>

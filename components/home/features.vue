@@ -1,34 +1,34 @@
 <template>
-    <section class="bg-white dark:bg-gray-900 md:flex md:justify-center md:items-center">
-        <div class="md:container px-6 py-10 mx-auto max-w-7xl w-full">
-            <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Why <br> Plant Oasis</h1>
-
-            <div class="mt-2">
-                <span class="inline-block w-40 h-1 bg-green-700 rounded-full"></span>
-                <span class="inline-block w-3 h-1 ml-1 bg-green-700 rounded-full"></span>
-                <span class="inline-block w-1 h-1 ml-1 bg-green-700 rounded-full"></span>
-            </div>
-
-            <div class="mt-8 xl:mt-12 flex max-w-7xl w-full items-center">
-                <div class="flex flex-wrap gap-3">
-                    <div class="hidden ph-cell-signal-full"></div>
-                    <div class="space-y-3" v-for="item in features">
-                    <span class="inline-block p-3 text-green-700 bg-orange-100 rounded-xl dark:text-white dark:bg-blue-500">
-                        <div :class="item.icon"></div>
-                    </span>
-                    <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">{{ item.title }}</h1>
-                       <div class="">
-                            <p class="text-gray-500 dark:text-gray-300 max-w-xs">
-                           {{ item.description }}
-                            </p>
-                        </div>
+    <section class="dark:bg-gray-900 md:flex flex-col md:justify-center md:items-center relative w-screen py-10 bg-orange-50 flex justify-center items-center z-5">
+     
+          <div class="absolute -z-20 top-0 right-0">
+                        <img src="/img/palmRT.png" alt="" class="w-48 md:w-72">
                     </div>
-                 
+          <div class="absolute -z-20 top-1/2 left-0">
+                        <img src="/img/palmextraL.png" alt="" class="w-24 md:w-24">
+                    </div>
+      
+    
+                      <div class="text-4xl py-10 font-bold font-poppins">
+                <div class="text-gray-700"><span class="text-green-600">Why</span> plantoasis ?</div>
+            </div>                       
+     <div class="max-w-7xl w-full flex justify-center  gap-5 flex-wrap my-10 p-3">
+       
+        <div class="p-5 max-w-xs w-full bg-orange-100 rounded font-poppins shadow" v-for="feature,index in features" :key="index">
+             <div class="text-3xl text-green-600">
+                    <div :class="feature.icon"></div>
                 </div>
-
-           
-            </div>
+            <div class="py-3 text-xl font-bold text-gray-700">{{ feature.title }} </div>
+            
+           <div class="text-sm">
+            {{ feature.description }}
+           </div>
         </div>
+     </div>
+                                    
+      
+          
+       
     </section>
 </template>
 
@@ -36,10 +36,21 @@
 
 let features = ref([
     {
-        title: "feature #1",
-        icon: 'i-ph:list',
-        description:"Plant Oasis is an agro product based affiliate marketing company that is dedicated to promoting sustainable and organic agricultural practices and products"
-    }
+        title: "Trusted",
+        icon: 'i-ph:circle-wavy-check-fill',
+        description:"At Plant Oasis, we believe that agriculture should be focused on nurturing and preserving the earth's natural resources rather than exploiting them for profit. We work with trusted suppliers and farmers who share our values to bring you products that are free from harmful chemicals and pesticides, and that promote biodiversity and soil health."
+    },
+    {
+        title: "Diverse",
+        icon: 'i-ph:tree-evergreen-fill',
+        description:"Our range of products includes a wide range of coir based products such as Coco Peat,Coir Geo textile, Coir Logs ,Coir Fibre . We also offer various value added coir based home furnishing products like door mats, carpets for your home and office furnihsing buisness"
+    },
+    {
+        title: "Empowering Local Communities",
+        icon: 'i-ph:users-four-fill',
+        description:"In addition to our commitment to sustainable agriculture, we are also passionate about supporting local communities and small businesses. We work with farmers and suppliers from all around the world, and we strive to create meaningful relationships with each of them. By doing so, we can ensure that our customers receive products of the highest quality while supporting ethical and responsible business practices."
+    },
+ 
 ])
 
 </script>

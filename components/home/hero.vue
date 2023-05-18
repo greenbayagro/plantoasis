@@ -1,19 +1,25 @@
 <template>
-
-     <div class="md:container px-6 py-16 mx-auto text-center">
-            <div class="max-w-lg mx-auto">
-                <h1 class="text-3xl font-semibold text-gray-400 dark:text-white lg:text-4xl font-mont">
+<div class="relative">
+         <div class="md:container px-6 pt-16 mx-auto  flex flex-wrap md:h-full  min-h-140 py-10">
+                <div class="md:max-w-1/3 mx-auto leading-10">
+                    <h1 class="text-4xl font-bold text-gray-800 dark:text-white lg:text-5xl font-poppins leading-10">
                     
-                    <span class="font-semibold text-green-700">Plant Oasis</span> <br> Promoting Eco Friendly lifestyle
-                </h1>
-                <p class="mt-6 text-gray-500 dark:text-gray-700"> Plant Oasis is an agro product based affiliate marketing company that is dedicated to promoting sustainable and organic agricultural practices and products
-</p>
-                <button class="font-poppins bg-green-700 text-white px-3 py-2 rounded-lg outline-none border-none hover:bg-green-600">Contact us</button>
+                        <span class="font-bold text-green-500 leading-10">Plant Oasis</span> <br> Promoting Eco Friendly lifestyle
+                    </h1>
+                    <p class="mt-6 text-gray-500 dark:text-gray-700"> Plant Oasis is an agro product based affiliate marketing company that is dedicated to promoting sustainable and organic agricultural practices and products
+    </p>
+                    <button class="font-poppins bg-green-500 ease-in-out ease-in-out text-white text-lg px-3 py-3 w-56 rounded-full outline-none border-none hover:bg-orange-500">Contact us</button>
                
-            </div>
+                </div>
 
-            <div class="flex justify-center mt-10">
-                <img class="object-cover w-full h-96 rounded-xl lg:w-4/5" src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+                <div class="max-w-2xl w-full relative hidden md:block">
+                    <img class="absolute md:w-140 w-72 rounded-xl lg:w-4/5 md:-top-20 md:-right-30 -z-10" src="/img/headone.png" />
+                </div>
             </div>
-        </div>
+      
+                <div class="absolute -z-20 bottom-0">
+                    <img src="/img/palmLB.png" alt="" class="w-48 md:w-72">
+                </div>
+</div>
+
 </template>
