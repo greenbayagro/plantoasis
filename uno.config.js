@@ -12,9 +12,17 @@ export default defineConfig({
       provider: 'google',
       fonts: {
         sans: 'Roboto',
+        sansBody:'PT Sans',
         mono: ['Fira Code', 'Fira Mono:400,700'],
         poppins: ['Poppins'],
-        mont:'Montserrat'
+        mont: 'Montserrat',
+        latohead: 'Lato',
+        latobody: 'Open Sans',
+        playfairHead: 'Playfair Display',
+        playfairBody: 'Lora',
+        nunitoHead: 'Nunito',
+        nunitoBody:'Raleway'
+        
       },
     }),
       presetIcons()
