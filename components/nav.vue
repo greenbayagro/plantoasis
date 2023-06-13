@@ -25,6 +25,7 @@
                 <div class="flex md:justify-center md:items-center flex-col md:flex-row gap-3 font-poppins">
                    <router-link to="#" class="no-underline text-gray-900 hover:text-orange-400">Home</router-link>
                    <router-link to="#about" class="no-underline text-gray-900 hover:text-orange-400">About</router-link>
+                   <router-link to="#products" class="no-underline text-gray-900 hover:text-orange-400">Products</router-link>
                    <router-link to="#contact" class="no-underline text-gray-900 hover:text-orange-400">Contact</router-link>
                   
                 </div>

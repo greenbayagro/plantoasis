@@ -1,38 +1,42 @@
 <template>
-    <section id="products" class="bg-orange-50 relative">
+    <section id="products" class="bg-orange-50 relative py-50">
         <div class="max-w-7xl w-full p-5 mx-auto">
-            <div class="py-5 pb-10">
-                <div class="font-poppins text-4xl font-bold">Our <span class="text-green-600">Products</span></div>
+            <div class="py-5 pb-10" >
+                <div class="font-poppins text-4xl font-bold" >Our <span class="text-green-600">Products</span></div>
             </div>
               <swiper
-        :slidesPerView="2"
-     
+        :slidesPerView="1"
+    
         :spaceBetween="10"
         :centeredSlides="true"
         :pagination="{
             clickable: true,
         }"
+         :autoplay="{
+             delay: 2000,
+             disableOnInteraction: false,
+         }"
         :breakpoints="{
             '640': {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20,
             },
             '768': {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 40,
             },
             '1024': {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 spaceBetween: 50,
             },
         }"
        
         class="mySwiper"
       >
-      <swiper-slide class="w-80 h-90 relative group" v-for="product,index in products" :key="index">
+      <swiper-slide class="w-80 max-w-70 h-90 relative group" v-for="product,index in products" :key="index">
         <img :src="product.image" :alt="product.name" class="object-cover w-full h-90 rounded-xl"/>
         <div class="absolute w-full bg-gray-800 group-hover:bg-opacity-70 h-15 group-hover:h-full group-hover:rounded-t-xl transition-all ease-out z-10 bottom-0 rounded-b-xl"><div class="  p-3 text-md text-white font-poppins">
-            <div class="flex gap-3 justify-center items-center"> {{ product.name }} <div class="i-ph:arrow-right-bold text-white text-xl group-hover:hidden block transition-all ease-out"></div></div>
+            <div class="flex gap-3 justify-center items-center font-semibold"> {{ product.name }} <div class="i-ph:arrow-right-bold text-white text-xl group-hover:hidden block transition-all ease-out"></div></div>
             <div class="font-latobody text-sm">
                 {{ product.description }}
             </div>
@@ -68,23 +72,31 @@
     </section>
 </template>
 <script setup>
-let products =[
+let products = [
+    {
+        name: 'Geo Textiles',
+        description: 'Coir geo textiles have the mechanical strength necessary to hold soil in place and prevent erosion. The netting breaks up run-off heavy rains and dissipates the energy of flowing water. Coir also promotes the growth of new vegetation by absorbing water and preventing the topsoil from drying out.',
+        image: '/img/products/GeoTextile.jpeg',
+
+    },
+    {
+        name: 'Coir Logs',
+        description: `Coconut coir log is a biodegradable erosion control product for hills, banks, shorelines, and other erosion-prone areas, made of 100% natural coir fibers compressed in tubular mesh netting. It is easy to install and these coir fiber logs have been effectively used for erosion control in restoration projects, stabilization areas, and construction job sites.`,
+        image: '/img/products/coirlogs.jpg',
+
+    },
 {
     name: 'Coco Peat',
     description: 'Quality coco peat is an excellent substrate for cultivation and will have good water retention.coco peat is washed with clean and natural water to lower ec levels, which is very important for root and plant growth and washed coco peat is heat-treated, screened, and graded before being processed into coco peat products of various granularity and denseness .Coco peat contains many air pockets that increase the surface area for the root system that provides better absorption of nutrients from the soil.',
     image: '/img/products/cocoPeat.jpeg',
 
 },
-{
-    name: 'Geo Textiles',
-    description: 'Coir geo textiles have the mechanical strength necessary to hold soil in place and prevent erosion. The netting breaks up run-off heavy rains and dissipates the energy of flowing water. Coir also promotes the growth of new vegetation by absorbing water and preventing the topsoil from drying out.',
-    image: '/img/products/GeoTextile.jpeg',
 
-},
+
 {
-    name: 'Coir Logs',
-    description: `Coconut coir log is a biodegradable erosion control product for hills, banks, shorelines, and other erosion-prone areas, made of 100% natural coir fibers compressed in tubular mesh netting. It is easy to install and these coir fiber logs have been effectively used for erosion control in restoration projects, stabilization areas, and construction job sites.`,
-    image: '/img/products/coirlogs.jpg',
+    name: 'Coir Fiber',
+    description: `Coir is a natural fiber extracted from the outer husk of coconut and used in products such as floor mats, doormats, brushes ,rope,brushes and mattresses. Coir consists of 2 types of fibers , brown and white .Brown fiber is obtained from mature coconuts, it is thick, strong ,has a high abrasion resistance and is used in mats, brushes and sacking. White fiber which is extracted from immature green coconuts are smoother and finer, but also weaker. They are generally spun to make yarn used in mats or rope.`,
+    image: '/img/products/fiber.jpeg',
 
 },
 {

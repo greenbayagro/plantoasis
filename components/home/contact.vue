@@ -1,10 +1,15 @@
+<script setup>
+let accesskey ='843955ec-adc2-4af8-91f6-701d5c402b53'
+</script>
+
+
 <template>
-    <section class="bg-white dark:bg-gray-900" id="contact">
+    <section class="bg-white dark:bg-gray-900 py-50" id="contact">
         <div class="md:container mx-auto p-5">
             <div class="lg:flex lg:items-center lg:-mx-6">
-                <div class="lg:w-1/2 lg:mx-6">
+                <div class="lg:w-1/2 lg:mx-6" data-aos="fade-up">
                     <h1 class="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl font-latohead">
-                       <span class="text-green-600"> Contact us</span> for <br> more info
+                       <span class="text-green-600" > Contact us</span> for <br> more info
                     </h1>
 
                     <div class="mt-6 space-y-8 md:mt-8">
@@ -14,9 +19,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
 
-                            <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
-                                Cecilia Chapman 711-2880 Nulla
-                                St. Mankato Mississippi 96522
+                            <span class="mx-2 text-gray-700  w-72 dark:text-gray-400">
+                           PLANT OASIS LLC, 1687 Windswept Dr,Greenwood IN 46143-5600
                             </span>
                         </p>
 
@@ -25,7 +29,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>
 
-                            <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">(257) 563-7401</span>
+                            <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">+1 (317) 886-8267</span>
                         </p>
 
                         <p class="flex items-start -mx-2">
@@ -33,7 +37,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
 
-                            <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">acb@example.com</span>
+                            <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">contact@theplantoasis.com</span>
                         </p>
                     </div>
 
@@ -55,7 +59,7 @@
                                 </svg>
                             </a>
 
-                            <a class="mx-1.5 dark:hover:text-green-500 text-gray-400 transition-colors duration-300 transform hover:text-green-500" href="#">
+                            <a class="mx-1.5 dark:hover:text-green-500 text-gray-400 transition-colors duration-300 transform hover:text-green-500" href="https://www.facebook.com/people/Plant-Oasis/100092974295841/">
                                 <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 10.2222V13.7778H9.66667V20H13.2222V13.7778H15.8889L16.7778 10.2222H13.2222V8.44444C13.2222 8.2087 13.3159 7.9826 13.4826 7.81591C13.6493 7.64921 13.8754 7.55556 14.1111 7.55556H16.7778V4H14.1111C12.9324 4 11.8019 4.46825 10.9684 5.30175C10.1349 6.13524 9.66667 7.2657 9.66667 8.44444V10.2222H7Z" fill="currentColor" />
                                 </svg>
@@ -70,7 +74,7 @@
                     </div>
                 </div>
 
-           <div class="py-3 bg-white rounded-xl  shadow-xl max-w-md w-full h-110 relative contact">
+           <div class="py-3 bg-white rounded-xl  shadow-xl max-w-md w-full h-110 relative contact" data-aos="fade-up">
        <div class="flex flex-col gap-3 p-5">
             
               

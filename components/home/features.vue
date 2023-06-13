@@ -1,5 +1,5 @@
 <template>
-    <section class="dark:bg-gray-900 md:flex flex-col md:justify-center md:items-center relative w-screen py-10 bg-orange-50 flex justify-center items-center z-5">
+    <section class="dark:bg-gray-900 md:flex flex-col md:justify-center md:items-center relative w-screen py-50 bg-orange-50 flex justify-center items-center z-5">
      
           <div class="absolute -z-20 top-0 right-0">
                         <img src="/img/palmRT.png" alt="" class="w-48 md:w-72">
@@ -10,12 +10,12 @@
       
     
                       <div class="text-4xl py-10 font-bold font-poppins">
-                <div class="text-gray-700"><span class="text-green-600">Why</span> plantoasis ?</div>
+                <div class="text-gray-700" data-aos="fade-up"><span class="text-green-600" >Why</span> plantoasis ?</div>
             </div>                       
      <div class="max-w-7xl w-full flex justify-center  gap-5 flex-wrap my-10 p-3">
        
-        <div class="p-5 max-w-xs w-full bg-orange-100 rounded font-poppins shadow" v-for="feature,index in features" :key="index">
-             <div class="text-3xl text-green-600">
+        <div  class="p-5 max-w-xs w-full bg-orange-100 rounded font-poppins shadow" v-for="feature,index in features" :key="index">
+             <div class="text-3xl text-green-600" >
                     <div :class="feature.icon"></div>
                 </div>
             <div class="py-3 text-xl font-bold text-gray-700">{{ feature.title }} </div>
