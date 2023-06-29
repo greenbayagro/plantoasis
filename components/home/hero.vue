@@ -8,7 +8,7 @@
                     </h1>
                     <p class="mt-6 text-gray-500 dark:text-gray-700"> Plant Oasis is an agro product based affiliate marketing company that is dedicated to promoting sustainable and organic agricultural practices and products
     </p>
-                    <a href="#contact" class="font-poppins bg-green-500 ease-in-out ease-in-out text-white text-lg px-3 py-2 w-40 rounded-full outline-none border-none hover:bg-orange-500">Contact us</a>
+                    <a href="#contact" class="font-poppins bg-green-500 ease-in-out ease-in-out text-white text-lg px-3 py-2 w-40 rounded-full outline-none border-none hover:bg-orange-500 no-underline">Contact us</a>
                
                 </div>
 
