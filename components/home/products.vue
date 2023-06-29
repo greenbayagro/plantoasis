@@ -105,6 +105,24 @@ let products = [
     image: '/img/products/garden.jpeg',
 
 },
+{
+    name: 'Door Mat',
+    description: 'Coir mats Coir Rugs and Coir doormats are made up of 100% natural fibers. These environmentally-friendly, natural fibers are derived from the husk of the coconut. The husk is the water-resistant layer between the outer coating of the coconut and the hard shell inside. The durability, natural feel, cost effectiveness, versatility, anti-slippery characteristics makes it unique among other products.',
+    image: 'https://cdn.shopify.com/s/files/1/2234/5783/products/image_ffdfae1e-0d9f-4f96-9173-e486355020b2_x1200_crop_center.progressive.jpg?v=1622360442',
+
+},
+{
+    name: 'coir rug',
+    description: 'Coir mats Coir Rugs and Coir doormats are made up of 100% natural fibers. These environmentally-friendly, natural fibers are derived from the husk of the coconut. The husk is the water-resistant layer between the outer coating of the coconut and the hard shell inside. The durability, natural feel, cost effectiveness, versatility, anti-slippery characteristics makes it unique among other products.',
+    image: 'https://img3.exportersindia.com/product_images/bc-full/2021/6/4744109/coir-rugs-1623923647-5861985.jpeg',
+
+},
+{
+    name: 'coir mattings',
+    description: 'Coir mats Coir Rugs and Coir doormats are made up of 100% natural fibers. These environmentally-friendly, natural fibers are derived from the husk of the coconut. The husk is the water-resistant layer between the outer coating of the coconut and the hard shell inside. The durability, natural feel, cost effectiveness, versatility, anti-slippery characteristics makes it unique among other products.',
+    image: 'http://3.imimg.com/data3/DS/HY/MY-8263525/coir-matting-500x500.jpg',
+
+},
 
 ]
 </script>

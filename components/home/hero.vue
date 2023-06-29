@@ -13,7 +13,7 @@
                 </div>
 
                 <div class="max-w-2/3 w-full relative hidden md:block">
-                    <img class="absolute -z-10 w-full -top-50 -right-90" data-aos="fade-left" src="/img/headone.png" />
+                    <img class="absolute -z-10 w-full md:-top-20 md:-right-50 lg:-top-50 lg:-right-90" data-aos="fade-left" src="/img/headone.png" />
                 </div>
             </div>
       
