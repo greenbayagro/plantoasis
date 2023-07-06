@@ -4,11 +4,53 @@ let result = ref(false);
 let err = ref(false);
 let loading = ref(false);
 let msg = ref("");
-let email, phone, name, message;
+let email, name, message;
 email = ref("");
-phone = ref("");
 name = ref("");
 message = ref("");
+function formSubmit() {
+    loading.value = true;
+     let formData = JSON.stringify({
+        access_key: accesskey,
+        email: email.value,
+        name: name.value,
+        message: message.value,
+     });
+        fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        },
+        body: formData,
+    })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.value = true;
+                msg.value = json.message;
+            } else {
+                console.log(response);
+                msg.value = json.message;
+                result.value = true;
+                err.value = true;
+            }
+        })
+        .catch((error) => {
+            result.value = true;
+            err.value = true;
+            msg.value = "Something went wrong!";
+        })
+        .then(function () {
+            loading.value = false;
+            email.value = "";
+            name.value = "";
+            message.value = "";
+            setTimeout(() => {
+                result.value = false;
+            }, 5000);
+        });
+}
 </script>
 
 
@@ -89,7 +131,7 @@ message = ref("");
               
      
 
-        <div >
+        <form @submit.prevent="formSubmit">
             <div class="flex justify-center mx-auto">
                 <img class="w-auto h-12" src="/logo.png" alt="">
             </div>
@@ -97,10 +139,15 @@ message = ref("");
             <p class="mt-3 text-xl text-center font-poppins">
                  <span class="text-green-500">Contact </span> us
             </p>
-
+      <div
+                  :class="`p-3 text-white text-center ${err ? 'bg-red-500' : 'bg-green-500'}`"
+                  v-if="result"
+                >
+                  {{ msg }}
+                </div>
             <div class="mt-4">
                 <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200" for="LoggingEmailAddress">Name</label>
-                <input  class="block w-full px-4 py-2 border-0 border-b-2 border-green-500 focus:border-green-700 focus:outline-none" type="text" placeholder="Enter Name" />
+                <input required v-model="name"  class="block w-full px-4 py-2 border-0 border-b-2 border-green-500 focus:border-green-700 focus:outline-none" type="text" placeholder="Enter Name" />
             </div>
 
             <div class="mt-4">
@@ -108,20 +155,20 @@ message = ref("");
                     <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200" for="loggingPassword">Email</label>
                 </div>
 
-                <input id="loggingPassword" class="block w-full px-4 py-2 border-0 border-b-2 border-green-500 focus:border-green-700 focus:outline-none" type="email" placeholder="Enter Email" />
+                <input required v-model="email"  class="block w-full px-4 py-2 border-0 border-b-2 border-green-500 focus:border-green-700 focus:outline-none" type="email" placeholder="Enter Email" />
             </div>
      <div class="mt-4">
                     <label class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200" for="LoggingEmailAddress">Message</label>
-                    <textarea class="block w-full px-4 py-2 border-0 border-b-2 border-green-500 focus:border-green-700 focus:outline-none" placeholder="Enter Message" />
+                    <textarea required v-model="message" class="block w-full px-4 py-2 border-0 border-b-2 border-green-500 focus:border-green-700 focus:outline-none" placeholder="Enter Message" />
                 </div>
             <div class="mt-6">
-                <button class=" flex justify-center items-center gap-2 w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none  border-none">
+                <button type="submit" class=" flex justify-center items-center gap-2 w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none  border-none">
                     <div class="animate-spin" v-if="loading">O</div>Submit
                 </button>
             </div>
 
            
-        </div>
+        </form>
     
        </div>
            </div>
