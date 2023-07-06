@@ -1,5 +1,5 @@
 <template>
-    <nav x-data="{ isOpen: false }" class="relative bg-white shadow dark:bg-gray-800">
+    <nav x-data="{ isOpen: false }" class="fixed w-full bg-white z-20 shadow dark:bg-gray-800">
         <div class="px-6 py-4 mx-auto md:flex md:justify-between md:items-center md:container">
             <div class="flex items-center justify-between">
                 <a href="#" class="no-underline text-green-600 text-2xl flex justify-center items-center lowercase">

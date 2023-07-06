@@ -1,5 +1,14 @@
 <script setup>
-let accesskey ='843955ec-adc2-4af8-91f6-701d5c402b53'
+let accesskey = '843955ec-adc2-4af8-91f6-701d5c402b53'
+let result = ref(false);
+let err = ref(false);
+let loading = ref(false);
+let msg = ref("");
+let email, phone, name, message;
+email = ref("");
+phone = ref("");
+name = ref("");
+message = ref("");
 </script>
 
 
@@ -106,8 +115,8 @@ let accesskey ='843955ec-adc2-4af8-91f6-701d5c402b53'
                     <textarea class="block w-full px-4 py-2 border-0 border-b-2 border-green-500 focus:border-green-700 focus:outline-none" placeholder="Enter Message" />
                 </div>
             <div class="mt-6">
-                <button class="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none  border-none">
-                    Submit
+                <button class=" flex justify-center items-center gap-2 w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none  border-none">
+                    <div class="animate-spin" v-if="loading">O</div>Submit
                 </button>
             </div>
 

@@ -1,5 +1,5 @@
 <template>
-<div class="relative">
+<div class="relative pt-20">
          <div class="md:container px-6 pt-16 mx-auto  flex flex-wrap md:h-full  min-h-screen py-10" >
                 <div class="md:max-w-1/3 mx-auto leading-10" data-aos="fade-up">
                     <h1 class="text-4xl font-bold text-gray-800 dark:text-white lg:text-5xl font-poppins leading-10">
