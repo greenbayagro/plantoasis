@@ -13,11 +13,11 @@
             clickable: true,
         }"
         :modules="modules"
-         :autoplay="{
-             delay: 2000,
-             disableOnInteraction: false,
-             pauseOnMouseEnter:true
-         }"
+        :autoplay="{
+            delay: 2000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+        }"
         :breakpoints="{
             '640': {
                 slidesPerView: 1,
@@ -35,26 +35,17 @@
        
         class="mySwiper"
       >
-      <swiper-slide class="w-80 max-w-70 h-90 relative group" v-for="product,index in products" :key="index">
-        <img :src="product.image" :alt="product.name" class="object-cover w-full h-90 rounded-xl"/>
-        <div class="absolute w-full bg-gray-800 group-hover:bg-opacity-70 h-15 group-hover:h-full group-hover:rounded-t-xl transition-all ease-out z-10 bottom-0 rounded-b-xl"><div class="  p-3 text-md text-white font-poppins">
-            <div class="flex gap-3 justify-center items-center font-semibold"> {{ product.name }} <div class="i-ph:arrow-right-bold text-white text-xl group-hover:hidden block transition-all ease-out"></div></div>
-            <div class="font-latobody text-sm">
-                {{ product.description }}
-            </div>
-   
-        </div></div>
-    </swiper-slide>
-      
      
-      
-   
+      <swiper-slide class="w-80 max-w-70 h-90 relative" v-for="product, index in products" :key="index">
+    
+      <SwiperSlideComp :name="product.name" :image="product.image" :description="product.description"/>
+   </swiper-slide>
       </swiper>
         </div>
            <div class="px-4 py-16 lg:flex lg:items-center lg:justify-center bg-orange-100">
                   <div class="max-w-7xl w-full md:flex items-center gap-10 justify-between">
                           <h2 class="text-2xl font-semibold tracking-tight font-poppins text-gray-800 xl:text-3xl dark:text-white inline-block">
-                                Download our <span class="text-green-500">borchure</span>
+                                Download our <span class="text-green-500">brochure</span>
                             </h2>
 
                             <div class="mt-8 lg:mt-0 md:inline-block">
@@ -79,9 +70,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay} from 'swiper';
+import SwiperSlideComp from './swiperSlideComp.vue';
 // swiper
 
-let modules= [Autoplay]
+let modules = [Autoplay]
+
 // swiper end
 let products = [
     {
@@ -114,26 +107,26 @@ let products = [
         image: 'http://3.imimg.com/data3/DS/HY/MY-8263525/coir-matting-500x500.jpg',
 
     },
-{
-    name: 'Coco Peat',
-    description: 'Quality coco peat is an excellent substrate for cultivation and will have good water retention.coco peat is washed with clean and natural water to lower ec levels, which is very important for root and plant growth and washed coco peat is heat-treated, screened, and graded before being processed into coco peat products of various granularity and denseness .Coco peat contains many air pockets that increase the surface area for the root system that provides better absorption of nutrients from the soil.',
-    image: '/img/products/cocoPeat.jpeg',
+    {
+        name: 'Coco Peat',
+        description: 'Quality coco peat is an excellent substrate for cultivation and will have good water retention.coco peat is washed with clean and natural water to lower ec levels, which is very important for root and plant growth and washed coco peat is heat-treated, screened, and graded before being processed into coco peat products of various granularity and denseness .Coco peat contains many air pockets that increase the surface area for the root system that provides better absorption of nutrients from the soil.',
+        image: '/img/products/cocoPeat.jpeg',
 
-},
+    },
 
 
-{
-    name: 'Coir Fiber',
-    description: `Coir is a natural fiber extracted from the outer husk of coconut and used in products such as floor mats, doormats, brushes ,rope,brushes and mattresses. Coir consists of 2 types of fibers , brown and white .Brown fiber is obtained from mature coconuts, it is thick, strong ,has a high abrasion resistance and is used in mats, brushes and sacking. White fiber which is extracted from immature green coconuts are smoother and finer, but also weaker. They are generally spun to make yarn used in mats or rope.`,
-    image: '/img/products/fiber.jpeg',
+    {
+        name: 'Coir Fiber',
+        description: `Coir is a natural fiber extracted from the outer husk of coconut and used in products such as floor mats, doormats, brushes ,rope,brushes and mattresses. Coir consists of 2 types of fibers , brown and white .Brown fiber is obtained from mature coconuts, it is thick, strong ,has a high abrasion resistance and is used in mats, brushes and sacking. White fiber which is extracted from immature green coconuts are smoother and finer, but also weaker. They are generally spun to make yarn used in mats or rope.`,
+        image: '/img/products/fiber.jpeg',
 
-},
-{
-    name: 'Garden Articles',
-    description: 'Coir Pot is a biodegradable cultivation pot made of coconut fibers. It is used for horticulture, ornamental plant and nurseries, as well as for the domestic gardening market. It has an exceptionally high permeability to water, air, and roots. Coir pot is used by those looking for faster cultivation.',
-    image: '/img/products/garden.jpeg',
+    },
+    {
+        name: 'Garden Articles',
+        description: 'Coir Pot is a biodegradable cultivation pot made of coconut fibers. It is used for horticulture, ornamental plant and nurseries, as well as for the domestic gardening market. It has an exceptionally high permeability to water, air, and roots. Coir pot is used by those looking for faster cultivation.',
+        image: '/img/products/garden.jpeg',
 
-},
+    },
 
 
 ]

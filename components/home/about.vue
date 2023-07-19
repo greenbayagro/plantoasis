@@ -4,8 +4,8 @@
     <div class="md:max-w-1/2">
         <div class="font-poppins text-4xl font-bold" data-aos="fade-up"><span class="text-green-600">About</span> Us</div>
         <div class="font-poppins" data-aos="fade-up">
-     <p class="py-2">Plant Oasis is an agro product based affiliate marketing company that is dedicated to promoting sustainable and organic agricultural practices and products . Our mission is to provide our customers with high-quality and eco-friendly products that are beneficial for both their health and the environment.</p>
-    <p class=" py-2">At Plant Oasis, we are dedicated to promoting sustainable agriculture and healthy living through our products and services. We are constantly expanding our product line and seeking out new and innovative ways to help you achieve your agricultural goals. Thank you for choosing Plant Oasis as your trusted partner in sustainable products for your land and water management,civil engineering and  agriculture based businesses.</p>
+     <p class="py-2">Plant Oasis is an agro product based affiliate marketing company that is dedicated to promoting sustainable and organic agricultural practices and products .We are headquartered in Indiana and our mission is to provide our customers with high-quality and eco-friendly products that are beneficial for both their health and the environment.</p>
+    <p class=" py-2">At Plant Oasis, we are dedicated to promoting sustainable agriculture and healthy living through our products and services. We are constantly expanding our product line and seeking out new and innovative ways to help you achieve your business goals. Thank you for choosing Plant Oasis as your trusted partner in sustainable products for your land and water management,civil engineering and  agriculture based businesses.</p>
         </div>
     </div>
     <div class="">
