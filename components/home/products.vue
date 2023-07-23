@@ -50,9 +50,9 @@
 
                             <div class="mt-8 lg:mt-0 md:inline-block">
                                 <div class="flex flex-col space-y-3 sm:space-y-0 sm:flex-row sm:-mx-2">
-                                    <button class="px-6 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-600 rounded-lg focus:ring focus:ring-green-300  fo sm:mx-2 hover:bg-green-500 border-none focus:bg-green-500">
+                                    <a target="_blank" href="https://drive.google.com/file/d/1-V1LEzX0UsJzXvcM1RRBgrx79mCbCaCz/view?usp=drive_link" class="px-6 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-600 rounded-lg focus:ring focus:ring-green-300  fo sm:mx-2 hover:bg-green-500 border-none focus:bg-green-500 no-underline font-poppins">
                                        Download
-                                    </button>
+                                    </a>
                                 </div>
 
                             </div>
