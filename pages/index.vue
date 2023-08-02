@@ -9,7 +9,7 @@
                 />
                 <Meta
                   name="keywords"
-                  content="`agro,cocopeat, plant,nature, marketing, united states`"
+                  content="`agro,cocopeat,Geo Textiles,Coir Logs,Door Mat,coir rug,Coir Fiber,Garden Articles, plant,nature, marketing, united states`"
                 />
               </Head>
               <div class="flex flex-col gap-3 w-screen h-screen justify-center items-center" v-if="loading==true">
