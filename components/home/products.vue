@@ -50,7 +50,7 @@
 
                             <div class="mt-8 lg:mt-0 md:inline-block">
                                 <div class="flex flex-col space-y-3 sm:space-y-0 sm:flex-row sm:-mx-2">
-                                    <a target="_blank" href="https://online.fliphtml5.com/pqnpr/okqz/" class="px-6 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-600 rounded-lg focus:ring focus:ring-green-300 text-center fo sm:mx-2 hover:bg-green-500 border-none focus:bg-green-500 no-underline font-poppins">
+                                    <a target="_blank" href="https://fliphtml5.com/api/download/download-file?bookId=51112844&type=1" class="px-6 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-600 rounded-lg focus:ring focus:ring-green-300 text-center fo sm:mx-2 hover:bg-green-500 border-none focus:bg-green-500 no-underline font-poppins">
                                        Download
                                     </a>
                                 </div>
