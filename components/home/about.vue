@@ -16,6 +16,68 @@
                                         <img src="/img/palmLT.png" alt="" class="w-48 md:w-72 opacity-30">
                                     </div>
 </section>
+
+<section>
+  <div class="flex flex-col justify-center items-center">
+    <div class="max-w-7xl">
+        <div class="font-poppins p-5">
+             <div class="font-poppins text-4xl font-bold" data-aos="fade-up"><span class="text-green-600">Our</span> Services</div>
+            <div class="py-2" data-aos="fade-up">
+                At Plant Oasis, we pride ourselves on being your trusted partner in the world of marketing and 
+        commerce. Our mission is to empower businesses with tailored solutions that pave the way for 
+        success. Explore our range of services that cater to your unique needs:
+            </div>
+            
+
+            <div class="my-3" data-aos="fade-up">
+                <div class="font-bold py-2 text-lg">Affiliate Relationships and Industry Expertise</div>
+                <div class="">
+                    Our extensive network and industry expertise are at the core of our services. We have cultivated 
+    strong relationships with reputable manufacturers and exporters of high-quality coco coir products 
+    in India. Leveraging these connections, we connect you with the ideal supplier for your specific 
+    product requirements while ensuring competitive pricing. The best part? You don't incur any costs 
+    for our services; we are compensated by our partner suppliers for the marketing services we provide. 
+                </div>
+            </div>
+            <div class="my-3" data-aos="fade-up">
+                <div class="font-bold py-2 text-lg">Transportation and Logistical Support </div>
+                <div class="">
+                    Navigating the complexities of shipping and logistics can be a daunting task. That's where we come 
+    in. We offer comprehensive transportation and logistical support to ensure a smooth transition from 
+    supplier to your doorstep, right here in the USA. Our dedicated team will be your extra pair of hands, 
+    assisting you in resolving any logistical and transformational challenges that may arise during the 
+    shipping process. Additionally, we facilitate the procurement of product samples, specifications, and 
+    quotes to help you make informed decisions before finalizing your orders. 
+                </div>
+            </div>
+            <div class="my-3" data-aos="fade-up">
+                <div class="font-bold py-2 text-lg">Customer Care and Premier Management</div>
+                <div class="">
+                    At Plant Oasis , we understand the importance of accessible and efficient customer care. That's why 
+    we don't rely on impersonal ticket systems. Our seasoned account managers are available whenever 
+    you need them, providing personalized support tailored to your unique requirements. Whether you 
+    have questions, concerns, or require assistance, you can count on us to be there for you, without any 
+    additional charges. 
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="max-w-7xl bg-teal-600 md:rounded-md text-white my-5 font-poppins" data-aos="fade-up">
+        <div class="p-5">
+     <div class="py-3">
+                    <span class="font-bold">Partner</span> with us at <span class="font-bold">Plant Oasis</span> and experience a new standard of service excellence. We're here to 
+        elevate your business, streamline your operations, and ensure your success in the ever-evolving 
+        world of commerce. Your satisfaction is our commitment, and your growth is our passion. 
+        Let's embark on this journey together, and together, we'll reach new heights in your business endeavors
+                </div>
+                <div class="my-3">
+                     <a href="#contact" class="font-poppins bg-white ease-in-out ease-in-out text-green-500 text-lg px-3 py-2 w-40 rounded-full outline-none border-none hover:bg-orange-500 hover:text-white no-underline">Contact us</a>
+                </div>
+        </div>
+    </div>
+  </div>
+</section>
    <!-- <section id="about" class="relative min-w-120 my-10 p-5">
      <div class="relative flex justify-center items-center">
             <div class="md:container mx-auto max-w-7xl flex md:justify-center md:items-center flex-wrap gap-3">
